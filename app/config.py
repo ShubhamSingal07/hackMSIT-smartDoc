@@ -34,4 +34,4 @@ LOG_MAXBYTES = 1024
 LOG_BACKUPS = 2
 
 
-UPLOAD_FOLDER = '/sysroot/home/tarun/easymed/AI_Startup_Prototype/FlaskSaaS-master/app/forms'
+UPLOAD_FOLDER = "G:\\hackMSIT-smartDoc\\app\\forms"

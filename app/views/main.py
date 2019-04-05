@@ -24,6 +24,7 @@ def upload_file():
    if request.method == 'POST':
       f = request.files['file']
       path = os.path.join(app.config['UPLOAD_FOLDER'], f.filename)
+      print(path)
       model= ResNet50(weights='imagenet')
       img = image.load_img(path, target_size=(224,224))
       x = image.img_to_array(img)

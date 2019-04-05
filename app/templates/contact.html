@@ -1,15 +1,21 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block content %}
 
-	<h1 class="ui header">{{ title }}</h1>
+<h1 class="ui header">{{ title }}</h1>
 
-	{% if current_user.is_authenticated %}
-	  	<h2 class="ui header">Hi {{ current_user.name }}!</h2>
-	{% endif %}
+{% if current_user.is_authenticated %}
+<h2 class="ui header">Hi {{ current_user.name }}!</h2>
+{% endif %}
+
+<style>
+	.home_content {
+		display: none;
+	}
+</style>
 
 {% endblock %}

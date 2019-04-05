@@ -8,42 +8,49 @@
 
 <!-- <h1 class="ui header">{{title}}</h1> -->
 {% if current_user.is_authenticated %}
-<!-- <center> -->
-  <!-- <img
-    src="https://www.popsci.com/sites/popsci.com/files/styles/1000_1x_/public/images/2018/08/untitled.png?itok=ualUMeJN&fc=50,50"> -->
-<!-- </center> -->
-<form action="http://localhost:5000/uploaded" method="POST" enctype="multipart/form-data">
-  <input class="ui primary button" type="file" name="file" />
-  <input class="ui primary button" style="font-size: 1.2em;" value="Submit" type="submit" />
-</form>
 
-<!-- <!Doctype html>
+<style>
+  .home_content {
+    display: none;
+  }
+</style>
+
+<!Doctype html>
 <html>
+
 <body>
 
-	  <form action="/user/charge" method="post">
-    <article>
-      <label>
-      </label>
-    </article>
+  <div class="row center" style="margin-top:4%;">
+    <div style="margin-left:25% ;">
+      <div class="column" style="background-color:rgb(255, 235, 185);margin: auto;">
+        <h2>One-time</h2>
+        <p>• 10 USD per automated diagnosis</p>
+        <p>• Email support</p>
+        <p>• Instant Delivery</p>
+        <form action="/user/charge" method="post">
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_TQmy1LFbeJ6tgZLOdzT4pZRh00mJ3yq97c" data-description="A Flask Charge" data-amount="1000"
+            data-email="{{ email }}" data-locale="auto"></script>
+        </form>
+      </div>
+      <div class="column" style="background-color:rgb(255, 212, 102);margin: auto;">
+        <h2>Enterprise</h2>
+        <p>• Unlimited Diagnoses</p>
+        <p>• 24/7 Phone Support</p>
+        <p>• Custom Tooling</p>
+        <p>• Contact us for a price quote</p>
+        <form action="/user/charge" method="post">
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_TQmy1LFbeJ6tgZLOdzT4pZRh00mJ3yq97c" data-description="A Flask Charge" data-amount="200000"
+            data-email="{{ email }}" data-locale="auto"></script>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+</body>
 
-            data-key="pk_test_TQmy1LFbeJ6tgZLOdzT4pZRh00mJ3yq97c"
-            data-description="A Flask Charge"
-            data-amount="1000"
-	    data-email="{{ email }}"
-            data-locale="auto"></script>
-            
-            
-            
-            </body>
-            </html>
-
-    
-  </form>
-  </body>
-  </html>  -->
+</html>
 
 
 
