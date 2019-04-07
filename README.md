@@ -1,4 +1,4 @@
-# flaskSaas
+# SmartDoc
 
 ![License](http://img.shields.io/:license-mit-blue.svg)
 
@@ -40,7 +40,6 @@ A fork of [Max Halford's](https://github.com/MaxHalford) [flask-boilerplate](htt
 ### Frontend
 
 - [Semantic UI](http://semantic-ui.com/) for the global style. Very similar to [Bootstrap](http://getbootstrap.com/).
-- [Leaflet JS](http://leafletjs.com/) for the map. I only added it for the sake of the example.
 
 ## Structure
 
