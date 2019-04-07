@@ -38,6 +38,11 @@ body {
   background-color: #16bdff !important;
 }
 
+.primary:hover{
+  background-color: black !important;
+  transition-duration:500ms;
+}
+
 .form-error {
   color: #e50000 !important;
 }
